@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootCicdjenkensdockerintegratioApplication {
 
 	public static void main(String[] args) {
+		System.out.println(" ============== welcome ======================");
 		SpringApplication.run(SpringbootCicdjenkensdockerintegratioApplication.class, args);
 	}
 
