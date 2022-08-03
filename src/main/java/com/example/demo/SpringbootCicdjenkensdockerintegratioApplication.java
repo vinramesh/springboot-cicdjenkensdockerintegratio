@@ -11,6 +11,7 @@ public class SpringbootCicdjenkensdockerintegratioApplication {
 
 	@GetMapping("/welcome")
 	public String getWelcomeMessage() {
+		System.out.println(" ============== welcome getWelcomeMessage ======================");
 		return "Welcome to micro servers ";
 	}
 	
