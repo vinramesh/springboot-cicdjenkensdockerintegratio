@@ -53,6 +53,6 @@
 				<artifactId>git-commit-id-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>devops-integration</finalName>
+		<finalName>springboot-cicdjenkensdockerintegratio</finalName>
 	</build>
 </project>
