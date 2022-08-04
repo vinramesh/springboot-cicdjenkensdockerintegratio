@@ -1,0 +1,221 @@
+git clone "url"
+git config --global user.email "vin.ramesh@gmail.com"
+git config --global user.name "Ramesh"
+
+cd to directory
+git add . 
+
+
+git commit -m "comment"
+git pull
+   if conflict 
+     fix the conflict
+     git commit
+git push
+
+===========================
+
+
+
+
+
+PTPL@TEPNB-2015-062 MINGW64 /e/Projects_Testing/test
+$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in E:/Projects_Testing/test/.git/
+
+PTPL@TEPNB-2015-062 MINGW64 /e/Projects_Testing/test (master)
+$ git clone "https://github.com/vinramesh/test.git"
+fatal: destination path 'test' already exists and is not an empty directory.
+
+PTPL@TEPNB-2015-062 MINGW64 /e/Projects_Testing/test (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+PTPL@TEPNB-2015-062 MINGW64 /e/Projects_Testing/test (master)
+$ git commit -m 'test commit"
+> git pull
+> ^C
+
+PTPL@TEPNB-2015-062 MINGW64 /e/Projects_Testing/test (master)
+$ git commit -m "test commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+        wrwrwrwerw.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PTPL@TEPNB-2015-062 MINGW64 /e/Projects_Testing/test (master)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+
+PTPL@TEPNB-2015-062 MINGW64 /e/Projects_Testing/test (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+PTPL@TEPNB-2015-062 MINGW64 /e/Projects_Testing/test (master)
+$ cd ../..
+
+PTPL@TEPNB-2015-062 MINGW64 /e
+$ cd eclipse
+eclipse/           eclipse_Workspace/
+
+PTPL@TEPNB-2015-062 MINGW64 /e
+$ cd eclipse_Workspace/
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace
+$ git clone https://github.com/vinramesh/singtelassignment.git
+fatal: destination path 'singtelassignment' already exists and is not an empty directory.
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace
+$ cd Git\ Repository/
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository
+$ git clone https://github.com/vinramesh/singtelassignment.git
+Cloning into 'singtelassignment'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository
+$ cd singtelassignment/
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git add .
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git pull
+Already up to date.
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git commit -m "init version"
+[main 95501c4] init version
+ 16 files changed, 418 insertions(+)
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/singtel/A1/Animal.java
+ create mode 100644 src/main/java/com/singtel/A1/Bird.java
+ create mode 100644 src/main/java/com/singtel/A1/Solution.java
+ create mode 100644 src/main/java/com/singtel/IF/FishBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/FlyBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/SoundBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/SwimBehaviourIF.java
+ create mode 100644 src/test/java/com/singtel/test/A1/AnimalTest.java
+ create mode 100644 src/test/java/com/singtel/test/A2/ChickenTest.java
+ create mode 100644 src/test/java/com/singtel/test/A2/DuckTest.java
+ create mode 100644 src/test/java/com/singtel/test/A3/RoosterTest.java
+ create mode 100644 src/test/java/com/singtel/test/B/FishTest.java
+ create mode 100644 src/test/java/com/singtel/test/C/ButterflyTest.java
+ create mode 100644 src/test/java/com/singtel/test/D1/AnimalsCountTest.java
+ create mode 100644 src/test/java/com/singtelA4/ParrotTest.java
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git reset HEAD~
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git add .
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git commit -m "init version"
+[main 9703688] init version
+ 10 files changed, 152 insertions(+)
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/singtel/A1/Animal.java
+ create mode 100644 src/main/java/com/singtel/A1/Bird.java
+ create mode 100644 src/main/java/com/singtel/A1/Solution.java
+ create mode 100644 src/main/java/com/singtel/IF/FishBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/FlyBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/SoundBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/SwimBehaviourIF.java
+ create mode 100644 src/test/java/com/singtel/test/A1/AnimalTest.java
+ create mode 100644 src/test/java/com/singtelA4/ParrotTest.java
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git reset HEAD~
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git add .
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git commit -m "init version"
+[main 29eb8f4] init version
+ 9 files changed, 108 insertions(+)
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/singtel/A1/Animal.java
+ create mode 100644 src/main/java/com/singtel/A1/Bird.java
+ create mode 100644 src/main/java/com/singtel/A1/Solution.java
+ create mode 100644 src/main/java/com/singtel/IF/FishBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/FlyBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/SoundBehaviourIF.java
+ create mode 100644 src/main/java/com/singtel/IF/SwimBehaviourIF.java
+ create mode 100644 src/test/java/com/singtel/test/A1/AnimalTest.java
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git push
+Username for 'https://github.com': vinramesh@gmail.com
+Password for 'https://vinramesh@gmail.com@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/vinramesh/singtelassignment.git/'
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$ git push
+Username for 'https://github.com': vin.ramesh@gmail.com
+Password for 'https://vin.ramesh@gmail.com@github.com':
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (24/24), 2.34 KiB | 239.00 KiB/s, done.
+Total 24 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vinramesh/singtelassignment.git
+   90fc10c..29eb8f4  main -> main
+
+PTPL@TEPNB-2015-062 MINGW64 /e/eclipse_Workspace/Git Repository/singtelassignment (main)
+$
