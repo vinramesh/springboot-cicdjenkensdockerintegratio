@@ -18,6 +18,8 @@ docker run -p 9090:8088 vinramesh/springboot-cicdjenkensdockerintegratio
 docker run -p 9090:8088 springboot-cicdjenkensdockerintegratio 
 http://localhost:9090/test/welcome
 
+docker run -p 9090:8088 -d vinramesh/springboot-cicdjenkensdockerintegratio
+http://localhost:9090/test/welcome
 
 
 http://localhost/hello
